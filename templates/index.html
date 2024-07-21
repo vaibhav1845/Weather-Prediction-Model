@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Predictor</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>Weather Prediction Model</h1>
+    <form action="/predict" method="post">
+        <label for="precipitation">Precipitation:</label>
+        <input type="text" id="precipitation" name="precipitation" required><br>
+        
+        <label for="temp_max">Max Temperature:</label>
+        <input type="text" id="temp_max" name="temp_max" required><br>
+        
+        <label for="temp_min">Min Temperature:</label>
+        <input type="text" id="temp_min" name="temp_min" required><br>
+        
+        <label for="wind">Wind:</label>
+        <input type="text" id="wind" name="wind" required><br>
+        
+        <input type="submit" value="Predict Weather">
+    </form>
+</body>
+</html>
